@@ -1,6 +1,7 @@
 import "./App.css";
 // import { useState } from "react";
 import Example from "./Example";
+import Form from "./Form";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { increment, decrement, incrementByAmount } from "./Apps/counterSlices";
@@ -22,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <Example />
+      <Form/>
       <h1>value={counter}</h1>
       <button onClick={incrementCounter}>Increment</button>
       <button onClick={decrementCounter}>Decrement</button>
